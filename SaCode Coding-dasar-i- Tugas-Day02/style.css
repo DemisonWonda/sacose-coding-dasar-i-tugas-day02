@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #262a2f;
+    background: #222cf2;
 }
  .container{
     width: 400px;
@@ -14,7 +14,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: chocolate;
     border-radius: 10px;
 }
 
@@ -22,6 +22,7 @@ body{
     font-weight: 600;
     font-size: 15;
     margin-bottom: 8px;
+
 }
 .container input{
     width: 100%;
@@ -40,8 +41,49 @@ body{
     border: 0;
     outline: 0;
     border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(red, green, blue, alpha);
+    box-shadow: 0 10px rgba(0, 0, 0, 0, 1);
     cursor: pointer;
     margin: 20px 0;
     font-weight: 500;
+}
+
+.imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.imgBox img{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.imBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+ 
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
