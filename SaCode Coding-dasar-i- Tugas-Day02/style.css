@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #222cf2;
+    mask-image: none;
+    background: #222;
 }
  .container{
     width: 400px;
@@ -14,7 +15,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: chocolate;
+    background: #dedefd;
+    background: ;
     border-radius: 10px;
 }
 
@@ -46,7 +48,6 @@ body{
     margin: 20px 0;
     font-weight: 500;
 }
-
 .imgBox{
     width: 200px;
     border-radius: 5px;
@@ -86,4 +87,12 @@ body{
     100%{
         transform: translateX(0);
     }
+}
+.body img{
+    width: 200px;
+    margin: 10px;
+    border: #fff;
+    color: #494eea;
+    background: #333;
+    display: 30%;
 }
